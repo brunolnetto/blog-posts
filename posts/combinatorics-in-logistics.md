@@ -37,22 +37,22 @@ When you hear “vehicle routing,” you probably think of distance, deadlines, 
 
 ---
 
-## 2. Step 1: The Pure Count at Fixed $m$
+### 2. Step 1: The Pure Count at Fixed *m*
 
-1. **Permute** all $n$ points ⇒ $n!$ possible sequences.
-2. **Cut** that sequence into $m$ non­empty segments by choosing $m-1$ of the $n-1$ gaps ⇒ $\displaystyle\binom{n-1}{m-1}$.
+* **Permute** all \$n\$ points ⇒ \$n!\$ possible sequences.
+* **Cut** that sequence into \$m\$ non‑empty segments by choosing \$m - 1\$ of the \$n - 1\$ gaps ⇒ \$\binom{n-1}{m-1}\$.
+  *Intuition*: cuts occur only *between* points, so no segment can be empty.
+* **Label** each segment by vehicle index \$1 \dots m\$ (distinguishable routes).
 
-   > **Intuition:** because cuts occur only between points, no segment can be empty.
-3. **Label** each segment by vehicle index $1\ldots m$.
+**Total count** (for fixed \$m\$):
 
 $$
-\boxed{
-\#_{\text{fixed }m}
-=\;n!\;\binom{n-1}{m-1}
-}
+ n! \cdot \binom{n-1}{m-1}
 $$
 
 ---
+
+ 
 
 ## 3. Step 2: Summing Over All $m$
 
@@ -77,7 +77,7 @@ Before adding **order** and **labels**, the classic grouping problem is:
 
 > **Example:** For $n=3$, $m=2$:
 > $\{A,B,C\}$ can split into two unlabeled groups in $S(3,2)=3$ ways:
-> $\{\{A,B\},\{C\}\},\;\{\{A,C\},\{B\}\},\;\{\{B,C\},\{A\}\}.$
+> $\{\{A,B\} \, and \, \{C\}\},\;\{\{A,C\} \, and \, \{B\}\},\;\{\{B,C\} \, and \, \{A\}\}.$
 
 Our ordered, labeled count
 
