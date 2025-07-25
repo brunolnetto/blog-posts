@@ -1,8 +1,4 @@
 <!-- docs/index.md -->
----
-layout: default
-title: Github Blog
----
 
 # Github Blog
 
