@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Combinatorics in Logistics: How Hard Can It Be?"
+date:   2025-07-25 10:00:00 -0300
+---
+
 **How Hard Can Combinatorics in a Logistics NP‑Hard Problem Be?**
 
 *From pure partitions to intractable vehicle‑routing*
